@@ -61,7 +61,7 @@ body {
   right: 15px;
 }
 
-.buttons button#pre {
+.buttons button#prev {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -80,6 +80,18 @@ body {
 .buttons button:hover {
   background-color: #fff;
   color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
 }
 
 /* ! Background Images */
